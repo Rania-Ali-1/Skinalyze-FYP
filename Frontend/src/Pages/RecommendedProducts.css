@@ -1,0 +1,126 @@
+/* src/Pages/RecommendedProducts.css */
+.recommended-page {
+    background-color: gray;
+    color: #fff;
+    min-height: 100vh;
+    padding: 2rem;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .page-title {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    font-weight: 800;
+    color: #111111; /* darker for visibility */
+    text-align: center;
+  }
+  
+  .analyzer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .face-image {
+    width: 300px;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px #444;
+    margin-bottom: 0.8rem;
+  }
+  
+  .detection-text {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: 800;
+    color: #111111; /* darker for visibility */
+    text-align: center;
+  }
+  
+  .upload-btn {
+    background: #ff3e6c;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    transition: background 0.3s ease;
+  }
+  
+  .upload-btn:hover {
+    background: #e6355e;
+  }
+  
+  .section-heading {
+    font-size: 1.9rem;
+  margin-bottom: 2rem;
+  font-weight: 800;
+  color: #111111; /* darker for visibility */
+  text-align: center;
+  }
+  
+  .category-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .category-btn {
+    padding: 0.6rem 1.2rem;
+    border: 1px solid #888;
+    border-radius: 8px;
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .category-btn.active,
+  .category-btn:hover {
+    background-color: #444;
+    border-color: #ff3e6c;
+    color: #fff;
+  }
+  
+  .products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 1rem;
+  }
+  
+  .product-card {
+    background-color: #1e1e1e;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(255, 62, 108, 0.15);
+    transition: transform 0.3s;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .product-img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .no-products {
+    color: #999;
+    font-style: italic;
+  }

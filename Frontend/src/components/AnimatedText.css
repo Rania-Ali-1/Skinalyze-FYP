@@ -1,0 +1,12 @@
+.animated-text {
+    display: inline-block;
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    opacity: 0;
+    transition: clip-path 1s ease-out, opacity 1s ease-out;
+  }
+  
+  .animated-text.animate-text {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    opacity: 1;
+  }
+  

@@ -1,0 +1,103 @@
+/* Top Bar */
+
+
+/* Header (Products List Title) */
+.eh {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.eh h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Hero Image */
+.image {
+  width: 100%;
+  margin-top: 20px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.ep-image {
+  width: 90%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 30px 40px;
+}
+
+.product-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+}
+
+.product-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product-actions {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.add-btn,
+.details-btn {
+
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  width: 100%;
+  max-width: 190px;
+}
+
+.add-btn {
+   margin-top: 1.5rem;
+   background-color: 	#A9A9A9; 
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 600;
+ 
+  
+}
+
+
+.details-btn {
+  background-color: #17a2b8;
+  color: white;
+}
+
+.no-products {
+  text-align: center;
+  color: gray;
+  font-size: 18px;
+}
+
+.loading,
+.error {
+  text-align: center;
+  font-size: 16px;
+  color: gray;
+}

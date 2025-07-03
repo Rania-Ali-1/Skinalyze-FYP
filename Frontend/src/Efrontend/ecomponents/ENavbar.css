@@ -1,0 +1,66 @@
+/* Container for both bars */
+.enavbar-container {
+  width: 100%;
+}
+
+/* Top Bar */
+.top-bar {
+  background-color: #ffb300;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  align-items: center;
+
+  width: 97.6%;
+}
+
+.top-bar .back-arrow {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: auto;
+}
+
+.top-bar a {
+  color: #000;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+/* Second Navigation Bar */
+.second-bar {
+  background-color: #ffffff;
+  padding: 6px 15px; /* reduced padding */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 6px; /* reduced gap */
+}
+
+.search-bar {
+  padding: 4px 8px; /* more compact */
+  font-size: 13px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.logo {
+  font-size: 16px; /* reduced font size */
+  font-weight: bold;
+  color: #000;
+}
+
+.navcart a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+  font-size: 14px;
+}

@@ -1,0 +1,51 @@
+.recommendation-form-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+
+.form-box label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+.form-box select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+.submit-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+   background-color: #3D53A0; 
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.results-box {
+  margin-top: 30px;
+}
+
+.recommendation-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.product-item {
+  text-align: center;
+}
+
+.product-image {
+  width: 100%;
+  max-width: 120px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,120 @@
+
+.home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e8f5fa;
+    height: 100vh;
+      overflow-y: auto; /* Lighter background */
+  }
+  
+  /* Navbar */
+  .cnavbar {
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    text-align: center;
+  }
+  
+  /* Landing Section */
+  .home-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+    width: 90%;
+    height: 700px; /* Ensure equal height for content and image */
+  }
+  
+  .home-text {
+    top: 19rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the text vertically */
+  }
+  
+  .ctitle {
+    font-size: 3rem; /* Larger title */
+    font-weight: bold;
+    margin-bottom: 0rem; /* Larger spacing between title and description */
+    line-height: 0.5; /* Increase line height */
+    opacity: 0;
+    animation: fade-in 1s forwards;
+  }
+  
+  .description {
+    font-size: 2rem; /* Larger description text */
+    margin-bottom: 2rem;
+    line-height: 1.8; /* Increased line height for better readability */
+    opacity: 0;
+    animation: fade-in 1s forwards;
+  }
+  
+  .highlight {
+    color: #3ce2ad;
+    font-weight: 500;
+  }
+  
+  .consult {
+    padding: 1.7rem 2rem;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #575f5d; /* Light grey background */
+    color: white;
+    width: 12rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .explore-button:hover {
+    background-color: #3ce2ad; /* Green on hover */
+  }
+  
+  .home-image img {
+    padding-top: 8rem;
+    width: 100%; /* Smaller image size */
+    max-width: 350px;
+    opacity: 0;
+    animation: fade-in-image 1s forwards;
+  }
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fade-in-image {
+    from {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media (max-width: 768px) {
+    .home-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .home-text {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+  
+    .home-image img {
+      width: 70%; /* Slightly smaller image for mobile */
+    }
+  }

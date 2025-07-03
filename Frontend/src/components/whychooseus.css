@@ -1,0 +1,110 @@
+/* General Styles */
+.why-choose-us {
+  padding: 2rem; 
+  padding-left: 6rem;
+  /* Sbackground color for distinction */
+  
+}
+
+.section-title {
+  
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 3rem; /* Larger title size */
+  font-weight: bold;
+  color: #2d3748; /* Darker color for better visibility */
+}
+
+.section-title h2 {
+  font-size: 3.5rem; /* Larger font size for the heading */
+  font-weight: bold;
+  margin: 0;
+  color: #1a202c; /* Darker shade for emphasis */
+}
+
+.section-title p {
+  font-size: 1.5rem; /* Slightly larger description text */
+  color: #4a5568; /* Neutral gray for better readability */
+}
+
+/* Content Wrapper */
+.content-wrapper {
+  padding: 0.5rem;
+  padding-left: 7rem;
+  width: 100%;
+  display: flex;
+/* Ensures both image and text align in height */
+  gap:4rem; /* Balanced spacing between elements */
+}
+
+.image-wrapper img {
+  width: 100%;
+
+  /* Matches the max-width of the text content */
+ /* Ensures image matches text height */
+  object-fit: cover; /* Maintain image aspect ratio within the set height */
+  opacity: 0;
+  animation: fade-in-image 1s forwards;
+}
+
+.text-content {
+  width: 50%;
+ /* Same width as the image for uniformity */
+  display: flex;
+  flex-direction: column; /* Ensures proper text alignment */
+  justify-content: center; /* Vertically center-align the text */
+}
+
+.text-block h3 {
+  font-size: 1.7rem; /* Larger text block headings */
+  color: black; /* Primary green */
+}
+
+.text-block p {
+  font-size: 1rem; /* Slightly larger body text */
+  color: #444;
+  line-height: 1; /* Improve readability with better line spacing */
+  opacity: 0;
+  animation: fade-in 1s forwards;
+}
+
+/* Animations */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in-image {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .image-wrapper img {
+    max-width: 100%; /* Make image responsive */
+    height: auto; /* Reset height for responsiveness */
+  }
+
+  .text-content {
+    width: 100%;
+  }
+}

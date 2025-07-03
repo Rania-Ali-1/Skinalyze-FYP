@@ -1,0 +1,201 @@
+/* General styling */
+.checkout {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+}
+ .top-bar {
+          background-color: #ffb300;
+          padding: 5px 20px;
+          display: flex;
+          justify-content: space-between;
+          font-size: 13px;
+          align-items: center;
+          flex-wrap: wrap;
+         
+        }
+
+        .top-bar .back-arrow {
+          color: #000;
+          text-decoration: none;
+          font-weight: bold;
+          margin-right: auto;
+        }
+
+        .top-bar a {
+          color: #000;
+          text-decoration: none;
+          margin-left: 10px;
+        }
+
+        .second-bar {
+          background-color: #ffffff;
+          padding: 10px 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-wrap: wrap;
+         
+        }
+
+        .left-section {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+
+        .search-bar {
+          padding: 6px 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+        }
+
+        .logo {
+          font-size: 20px;
+          font-weight: bold;
+          color: #000;
+        }
+
+        
+
+/* Checkout container */
+.checkout-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 50px 10%;
+}
+
+.checkout-row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+/* Order Summary Section */
+.order-summary {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 30%;
+}
+
+.order-summary h5 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.order-summary ul {
+  list-style-type: none;
+}
+
+.order-summary li {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+.order-summary li span {
+  font-weight: bold;
+}
+
+/* Billing Form Section */
+.billing-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 65%;
+}
+
+.billing-form h4 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group select {
+  cursor: pointer;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.form-row .form-group {
+  width: 32%;
+}
+
+button.checkout-btn {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  width: 100%;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button.checkout-btn:hover {
+  background-color: #218838;
+}
+
+/* Empty Cart */
+.empty-cart {
+  text-align: center;
+  padding: 50px;
+}
+
+.empty-cart h4 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.continue-shopping {
+  color: #007bff;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.continue-shopping i {
+  margin-right: 5px;
+}
+
+.continue-shopping:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}

@@ -1,0 +1,130 @@
+/* Main Explore Page Layout */
+.explore-page {
+  padding-top: 2rem;
+  display: flex;
+  height: 79vh;
+  width: 75vw;
+  
+}
+
+/* Sidebar for Search & Diseases */
+.explore-sidebar {
+  width: 300px;
+  background: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  height: 100vh;
+
+  overflow: hidden;
+}
+
+/* Search Box */
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.search-reset {
+  padding: 10px;
+  background: #575f5d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Disease List */
+.disease-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+  max-height: 75vh;
+}
+
+.disease-item {
+  padding: 12px;
+  background: #ffffff;
+  color: #333;
+  border-radius: 5px;
+  text-align: left;
+  cursor: pointer;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  transition: background 0.3s;
+}
+
+.disease-item:hover {
+  background: #ADBBD4;
+  color: white;
+}
+
+.disease-item.active {
+  background: #3D52A0;
+  color: white;
+}
+
+/* Disease Details Section */
+.disease-details {
+  flex-grow: 1;
+  padding: 2px;
+  background: #f4f4f4;
+  height: 79vh;
+  overflow: hidden; /* ✅ disables the scrollbar */
+}
+
+.disease-details h2 {
+  font-size: 24px;
+  color: black; /* ✅ changed from blue to black */
+  margin-bottom: 15px;
+}
+
+.detail-box {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+}
+
+.detail-box h3 {
+  margin: 0 0 5px;
+  color: #00796b;
+}
+
+.detail-box p {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+  .explore-page {
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+
+  .explore-sidebar {
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 2px solid #ddd;
+  }
+
+  .disease-details {
+    height: auto;
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,99 @@
+
+.derma-detection-container {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+.derma-detection-container h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  font-weight: 800;
+  color: #111111; /* darker for visibility */
+  text-align: center;
+    justify-content: center;
+}
+
+
+.upload-card {
+  background-color: #f9f9f9;
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upload-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.image-upload {
+  margin-bottom: 1rem;
+}
+
+.preview-image {
+  margin-top: 1rem;
+  max-width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  border: 2px solid #ff3e6c;
+  box-shadow: 0 0 10px rgba(255, 62, 108, 0.2);
+}
+.submit-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+
+.submit-btn {
+  margin-top: 1.5rem;
+   background-color: #3D53A0; 
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #0056b3;
+}
+
+.recommended-link-box {
+  margin-top: 2rem;
+  text-align: center;
+  display: none;
+}
+
+.recommended-link-box.active {
+  display: block;
+}
+
+.recommended-link {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.recommended-link:hover {
+  text-decoration: underline;
+}
